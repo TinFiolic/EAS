@@ -1,0 +1,5 @@
+<div class="header">    
+    <button type="submit" (click)="logout()" style="background-color: rgb(133, 9, 9); margin-right: 5%;">← Log out</button>
+    <button type="submit" (click)="redirect('')" style="margin-right: 1%;">View all posts</button>
+    <button type="submit" (click)="redirect('create')" *ngIf="authLevel === '1'">Create new post</button>
+</div>

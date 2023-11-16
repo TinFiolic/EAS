@@ -1,0 +1,18 @@
+<div class="form-container">
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" required>
+
+      <span>Is this user an admin?</span>
+      <input type="checkbox" id="admin" name="admin" [(ngModel)]="authLevel">
+
+      <button type="submit" (click)="register()">Register</button>
+
+      <div class="login">
+        ...or <a routerLink="/login">login</a>
+      </div>
+    </form>
+  </div>
